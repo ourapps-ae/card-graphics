@@ -1,0 +1,32 @@
+/* Cards: sizes in em, the card's font-size being a tenth of its width. Reads the theme's --paper, --paper-accent, --on-primary, --primary. */
+.card { border-radius: 8%; position: relative; flex: none; box-shadow: 0 2px 5px rgba(0,0,0,0.6); user-select: none; overflow: hidden; }
+.card.face { background: var(--paper); color: var(--on-primary); }
+.card.face.red { color: var(--paper-accent); }
+.card.face .index { position: absolute; z-index: 1; display: flex; flex-direction: column; align-items: center; line-height: 1; width: 1.6em; }
+.card.face .index.tl { left: 0.35em; top: 0.3em; }
+.card.face .index.br { right: 0.35em; bottom: 0.3em; transform: rotate(180deg); }
+.card.face .index .rank { font-size: 1.7em; font-weight: 700; white-space: nowrap; }
+.card.face .index .rank.ten { letter-spacing: -0.08em; font-stretch: condensed; }
+.card.face .index .pip { font-size: 1.2em; margin-top: 0.1em; }
+.card.face .box { position: absolute; left: 20%; top: 20%; width: 60%; height: 60%; border: 1px solid color-mix(in srgb, var(--on-primary) 15%, transparent); border-radius: 4%; }
+.card.face .box.court { left: 14%; top: 14%; width: 72%; height: 72%; }
+.card.face .box .court { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.card.face .box .p { position: absolute; transform: translate(-50%, -50%); font-size: 1.5em; line-height: 1; }
+.card.face .box .p.flip { transform: translate(-50%, -50%) rotate(180deg); }
+.card.face .box .p.small { font-size: 1.3em; }
+.card.face .box .p.ace { left: 50%; top: 50%; font-size: 4em; }
+.card.back { background: repeating-linear-gradient(45deg, var(--paper-accent) 0 4px, color-mix(in srgb, var(--paper-accent) 70%, #000) 4px 8px); border: 2px solid var(--paper); }
+.card.back.plain { background: color-mix(in srgb, var(--paper-accent) 80%, #000); }
+.card.back.art { background-size: cover; background-position: center; border: 1.5px solid var(--paper); }
+.card.slot { border: 1.5px dashed rgba(255,255,255,0.25); box-shadow: none; }
+.card.dim { opacity: 0.4; }
+.card.tappable { cursor: pointer; }
+
+/* Dealing: the card slides in from --deal-dx, --deal-dy and lands. */
+.card.dealing { animation-name: deal-in; animation-timing-function: ease-out; animation-fill-mode: backwards; }
+@keyframes deal-in { from { transform: translate(var(--deal-dx, 0), var(--deal-dy, 0)) scale(0.7); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* Flipping: the wrapper narrows to an edge and widens again; the card inside is swapped at the half-turn. */
+.card-flip { display: inline-block; perspective: 600px; }
+.card-flip.flipping { animation: flip-over var(--flip-ms, 400ms) ease-in-out; }
+@keyframes flip-over { 0% { transform: scaleX(1); } 50% { transform: scaleX(0.02); } 100% { transform: scaleX(1); } }

@@ -1,0 +1,54 @@
+{
+  "id": "ourapps-ae.card-graphics",
+  "name": "Card graphics",
+  "kind": "component",
+  "status": "example",
+  "package": "ourapps-ae/card-graphics",
+  "version": "0.3.0",
+  "ports": [
+    {
+      "id": "theme",
+      "name": "Theme",
+      "direction": "input",
+      "kind": "interface",
+      "type": "ae/theme",
+      "version": "1.0.0",
+      "required": true,
+      "cardinality": "one"
+    },
+    {
+      "id": "card-graphics",
+      "name": "Card graphics",
+      "direction": "output",
+      "kind": "interface",
+      "type": "ae/card-graphics",
+      "version": "1.0.0"
+    }
+  ],
+  "settings": [
+    {
+      "id": "backStyle",
+      "name": "Backstyle",
+      "type": "string",
+      "required": false,
+      "secret": false,
+      "default": "stripes"
+    },
+    {
+      "id": "cornerStyle",
+      "name": "Cornerstyle",
+      "type": "string",
+      "required": false,
+      "secret": false,
+      "default": "rounded"
+    },
+    {
+      "id": "cardWidth",
+      "name": "Cardwidth",
+      "type": "number",
+      "required": false,
+      "secret": false,
+      "default": 56
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "card-graphics",
+  "type": "ae/card-graphics",
+  "version": "1.0.0",
+  "description": "Playing card faces, backs and empty slots, with deal and flip animation, for a 52 card pack. A card code is a rank (2-9, T, J, Q, K, A) then a suit (c, d, h, s); null is face down.",
+  "settings": { "backStyle": "stripes|plain|art", "cornerStyle": "rounded|soft|square", "cardWidth": "pixels (8 to 600), default 56" },
+  "operations": {
+    "cardEl": { "arguments": ["code:string|null", "options?:{settings?:Partial<CardSettings>,width?:number,theme?:string,artFor?:(name:string)=>string|null,rankLabel?:(rank:string)=>string,dim?:boolean,tappable?:boolean,onClick?:()=>void}"], "returns": "HTMLElement" },
+    "cardSlot": { "arguments": ["width:number", "corner?:CornerStyle"], "returns": "HTMLElement" },
+    "flippingCard": { "arguments": ["from:string|null", "to:string|null", "options?:CardOptions&{durationMs?:number}"], "returns": "{element:HTMLElement,flip:()=>void}" },
+    "dealInto": { "arguments": ["node:HTMLElement", "step:DealStep", "from:{dx:number,dy:number}"], "returns": "HTMLElement" },
+    "dealStyle": { "arguments": ["step:DealStep"], "returns": "map<string,string>" },
+    "dealPlan": { "arguments": ["count:number", "options?:{dealMs?:number,gapMs?:number,startMs?:number}"], "returns": "DealStep[]{index,delayMs,durationMs,endMs}" },
+    "dealRounds": { "arguments": ["seats:number[]", "rounds:number", "options?:{dealMs?:number,gapMs?:number,startMs?:number}"], "returns": "(DealStep&{seat:number})[]" },
+    "flipState": { "arguments": ["progress:number"], "returns": "{showing:'from'|'to',scaleX:number}" },
+    "faceModel": { "arguments": ["code:string|null", "options?:{theme?:string,artFor?:(name:string)=>string|null,rankLabel?:(rank:string)=>string,backStyle?:BackStyle}"], "returns": "FaceModel{kind:'back',art}|{kind:'face',red,rank,rankText,pip,ten,centre}" },
+    "parseCard": { "arguments": ["code:unknown"], "returns": "{rank:string,suit:string,red:boolean}|null" },
+    "allCards": { "arguments": [], "returns": "string[52]" },
+    "cardMetrics": { "arguments": ["width:number", "corner?:CornerStyle"], "returns": "{width:number,height:number,unit:number,radius:number}" },
+    "normaliseSettings": { "arguments": ["input?:Partial<CardSettings>"], "returns": "CardSettings" }
+  },
+  "artFiles": "When the application ships artwork it names the files card-back-<theme>.png and card-<theme>-jack|queen|king.png; `artFor(name)` says where each is, or null to draw in code.",
+  "styles": { "web": "implementation/web/cards.css", "themeVariables": ["--paper", "--paper-accent", "--on-primary", "--primary"] },
+  "native": {
+    "apple": ["CardModel", "CardSettings", "CardStyle", "PlayingCard", "CardSlot", "DealtCard", "FlippingCard"],
+    "android": ["CardModel", "CardSettings", "CardStyle", "LocalCardStyle", "PlayingCard", "CardSlot", "DealtCard", "FlippingCard"]
+  }
+}

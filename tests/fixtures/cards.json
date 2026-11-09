@@ -1,0 +1,2464 @@
+{
+ "faces": [
+  {
+   "code": "2c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "2",
+    "rankText": "2",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "2d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "2",
+    "rankText": "2",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "2h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "2",
+    "rankText": "2",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "2s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "2",
+    "rankText": "2",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "3c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "3",
+    "rankText": "3",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "3d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "3",
+    "rankText": "3",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "3h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "3",
+    "rankText": "3",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "3s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "3",
+    "rankText": "3",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "4c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "4",
+    "rankText": "4",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "4d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "4",
+    "rankText": "4",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "4h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "4",
+    "rankText": "4",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "4s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "4",
+    "rankText": "4",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "5c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "5",
+    "rankText": "5",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "5d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "5",
+    "rankText": "5",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "5h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "5",
+    "rankText": "5",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "5s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "5",
+    "rankText": "5",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "6c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "6",
+    "rankText": "6",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "6d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "6",
+    "rankText": "6",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "6h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "6",
+    "rankText": "6",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "6s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "6",
+    "rankText": "6",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "7c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "7",
+    "rankText": "7",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "7d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "7",
+    "rankText": "7",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "7h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "7",
+    "rankText": "7",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "7s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "7",
+    "rankText": "7",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "8c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "8",
+    "rankText": "8",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.69,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "8d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "8",
+    "rankText": "8",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.69,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "8h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "8",
+    "rankText": "8",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.69,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "8s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "8",
+    "rankText": "8",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.5,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.31,
+       "flip": false,
+       "small": false
+      },
+      {
+       "x": 0.5,
+       "y": 0.69,
+       "flip": true,
+       "small": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "9c",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "9",
+    "rankText": "9",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "9d",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "9",
+    "rankText": "9",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "9h",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "9",
+    "rankText": "9",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "9s",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "9",
+    "rankText": "9",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.5,
+       "flip": false,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "Tc",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "T",
+    "rankText": "10",
+    "pip": "♣",
+    "ten": true,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.25,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.75,
+       "flip": true,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "Td",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "T",
+    "rankText": "10",
+    "pip": "♦",
+    "ten": true,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.25,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.75,
+       "flip": true,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "Th",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "T",
+    "rankText": "10",
+    "pip": "♥",
+    "ten": true,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.25,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.75,
+       "flip": true,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "Ts",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "T",
+    "rankText": "10",
+    "pip": "♠",
+    "ten": true,
+    "centre": {
+     "type": "pips",
+     "pips": [
+      {
+       "x": 0.2,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.13,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.38,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.62,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.2,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.8,
+       "y": 0.87,
+       "flip": true,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.25,
+       "flip": false,
+       "small": true
+      },
+      {
+       "x": 0.5,
+       "y": 0.75,
+       "flip": true,
+       "small": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "code": "Jc",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "J",
+    "rankText": "V",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "V"
+    }
+   }
+  },
+  {
+   "code": "Jd",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "J",
+    "rankText": "V",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "V"
+    }
+   }
+  },
+  {
+   "code": "Jh",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "J",
+    "rankText": "V",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "V"
+    }
+   }
+  },
+  {
+   "code": "Js",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "J",
+    "rankText": "V",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "V"
+    }
+   }
+  },
+  {
+   "code": "Qc",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "Q",
+    "rankText": "D",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "D"
+    }
+   }
+  },
+  {
+   "code": "Qd",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "Q",
+    "rankText": "D",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "D"
+    }
+   }
+  },
+  {
+   "code": "Qh",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "Q",
+    "rankText": "D",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "D"
+    }
+   }
+  },
+  {
+   "code": "Qs",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "Q",
+    "rankText": "D",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "D"
+    }
+   }
+  },
+  {
+   "code": "Kc",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "K",
+    "rankText": "R",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "R"
+    }
+   }
+  },
+  {
+   "code": "Kd",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "K",
+    "rankText": "R",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "R"
+    }
+   }
+  },
+  {
+   "code": "Kh",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "K",
+    "rankText": "R",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "R"
+    }
+   }
+  },
+  {
+   "code": "Ks",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "K",
+    "rankText": "R",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "rank",
+     "text": "R"
+    }
+   }
+  },
+  {
+   "code": "Ac",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "A",
+    "rankText": "A",
+    "pip": "♣",
+    "ten": false,
+    "centre": {
+     "type": "ace",
+     "pip": "♣"
+    }
+   }
+  },
+  {
+   "code": "Ad",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "A",
+    "rankText": "A",
+    "pip": "♦",
+    "ten": false,
+    "centre": {
+     "type": "ace",
+     "pip": "♦"
+    }
+   }
+  },
+  {
+   "code": "Ah",
+   "model": {
+    "kind": "face",
+    "red": true,
+    "rank": "A",
+    "rankText": "A",
+    "pip": "♥",
+    "ten": false,
+    "centre": {
+     "type": "ace",
+     "pip": "♥"
+    }
+   }
+  },
+  {
+   "code": "As",
+   "model": {
+    "kind": "face",
+    "red": false,
+    "rank": "A",
+    "rankText": "A",
+    "pip": "♠",
+    "ten": false,
+    "centre": {
+     "type": "ace",
+     "pip": "♠"
+    }
+   }
+  }
+ ],
+ "court": {
+  "kind": "face",
+  "red": true,
+  "rank": "Q",
+  "rankText": "Q",
+  "pip": "♥",
+  "ten": false,
+  "centre": {
+   "type": "court",
+   "art": "queen.png"
+  }
+ },
+ "backs": [
+  {
+   "kind": "back",
+   "art": null
+  },
+  {
+   "kind": "back",
+   "art": "back.png"
+  },
+  {
+   "kind": "back",
+   "art": null
+  }
+ ],
+ "flips": [
+  {
+   "progress": 0,
+   "showing": "from",
+   "scaleX": 1
+  },
+  {
+   "progress": 0.1,
+   "showing": "from",
+   "scaleX": 0.9510565162951535
+  },
+  {
+   "progress": 0.25,
+   "showing": "from",
+   "scaleX": 0.7071067811865476
+  },
+  {
+   "progress": 0.5,
+   "showing": "to",
+   "scaleX": -6.123233995736766e-17
+  },
+  {
+   "progress": 0.6,
+   "showing": "to",
+   "scaleX": 0.30901699437494734
+  },
+  {
+   "progress": 0.75,
+   "showing": "to",
+   "scaleX": 0.7071067811865475
+  },
+  {
+   "progress": 1,
+   "showing": "to",
+   "scaleX": 1
+  }
+ ],
+ "pips": {
+  "2": [
+   [
+    0.5,
+    0.13
+   ],
+   [
+    0.5,
+    0.87
+   ]
+  ],
+  "3": [
+   [
+    0.5,
+    0.13
+   ],
+   [
+    0.5,
+    0.5
+   ],
+   [
+    0.5,
+    0.87
+   ]
+  ],
+  "4": [
+   [
+    0.2,
+    0.13
+   ],
+   [
+    0.8,
+    0.13
+   ],
+   [
+    0.2,
+    0.87
+   ],
+   [
+    0.8,
+    0.87
+   ]
+  ],
+  "5": [
+   [
+    0.2,
+    0.13
+   ],
+   [
+    0.8,
+    0.13
+   ],
+   [
+    0.2,
+    0.87
+   ],
+   [
+    0.8,
+    0.87
+   ],
+   [
+    0.5,
+    0.5
+   ]
+  ],
+  "6": [
+   [
+    0.2,
+    0.13
+   ],
+   [
+    0.8,
+    0.13
+   ],
+   [
+    0.2,
+    0.5
+   ],
+   [
+    0.8,
+    0.5
+   ],
+   [
+    0.2,
+    0.87
+   ],
+   [
+    0.8,
+    0.87
+   ]
+  ],
+  "7": [
+   [
+    0.2,
+    0.13
+   ],
+   [
+    0.8,
+    0.13
+   ],
+   [
+    0.2,
+    0.5
+   ],
+   [
+    0.8,
+    0.5
+   ],
+   [
+    0.2,
+    0.87
+   ],
+   [
+    0.8,
+    0.87
+   ],
+   [
+    0.5,
+    0.31
+   ]
+  ],
+  "8": [
+   [
+    0.2,
+    0.13
+   ],
+   [
+    0.8,
+    0.13
+   ],
+   [
+    0.2,
+    0.5
+   ],
+   [
+    0.8,
+    0.5
+   ],
+   [
+    0.2,
+    0.87
+   ],
+   [
+    0.8,
+    0.87
+   ],
+   [
+    0.5,
+    0.31
+   ],
+   [
+    0.5,
+    0.69
+   ]
+  ],
+  "9": [
+   [
+    0.2,
+    0.13
+   ],
+   [
+    0.8,
+    0.13
+   ],
+   [
+    0.2,
+    0.38
+   ],
+   [
+    0.8,
+    0.38
+   ],
+   [
+    0.2,
+    0.62
+   ],
+   [
+    0.8,
+    0.62
+   ],
+   [
+    0.2,
+    0.87
+   ],
+   [
+    0.8,
+    0.87
+   ],
+   [
+    0.5,
+    0.5
+   ]
+  ],
+  "T": [
+   [
+    0.2,
+    0.13
+   ],
+   [
+    0.8,
+    0.13
+   ],
+   [
+    0.2,
+    0.38
+   ],
+   [
+    0.8,
+    0.38
+   ],
+   [
+    0.2,
+    0.62
+   ],
+   [
+    0.8,
+    0.62
+   ],
+   [
+    0.2,
+    0.87
+   ],
+   [
+    0.8,
+    0.87
+   ],
+   [
+    0.5,
+    0.25
+   ],
+   [
+    0.5,
+    0.75
+   ]
+  ]
+ },
+ "metrics": [
+  {
+   "width": 56,
+   "corner": "rounded",
+   "height": 78,
+   "unit": 5.6,
+   "radius": 4.48
+  },
+  {
+   "width": 100,
+   "corner": "soft",
+   "height": 140,
+   "unit": 10,
+   "radius": 14.000000000000002
+  },
+  {
+   "width": 33,
+   "corner": "square",
+   "height": 46,
+   "unit": 3.3,
+   "radius": 0.66
+  }
+ ],
+ "deal": [
+  {
+   "index": 0,
+   "delayMs": 0,
+   "durationMs": 350,
+   "endMs": 350
+  },
+  {
+   "index": 1,
+   "delayMs": 340,
+   "durationMs": 350,
+   "endMs": 690
+  },
+  {
+   "index": 2,
+   "delayMs": 680,
+   "durationMs": 350,
+   "endMs": 1030
+  },
+  {
+   "index": 3,
+   "delayMs": 1020,
+   "durationMs": 350,
+   "endMs": 1370
+  }
+ ]
+}

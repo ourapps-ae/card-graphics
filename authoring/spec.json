@@ -1,0 +1,143 @@
+{
+  "name": "card-graphics",
+  "version": "0.3.0",
+  "title": "Card graphics",
+  "description": "Playing card faces, backs and empty slots with deal and flip animation, for web, Apple and Android.",
+  "facilities": [
+    {
+      "id": "card-graphics",
+      "description": "Card faces, backs, slots, dealing and flipping"
+    }
+  ],
+  "provides": [
+    {
+      "id": "card-graphics",
+      "type": "ae/card-graphics",
+      "version": "1.0.0",
+      "path": "interfaces/card-graphics.json"
+    }
+  ],
+  "requires": [
+    {
+      "id": "theme",
+      "type": "ae/theme",
+      "version": "1.0.0",
+      "path": "interfaces/required/theme.json"
+    }
+  ],
+  "collect": [
+    {
+      "id": "backStyle",
+      "type": "string",
+      "grammar": "identifier",
+      "required": false,
+      "secret": false,
+      "default": "stripes"
+    },
+    {
+      "id": "cornerStyle",
+      "type": "string",
+      "grammar": "identifier",
+      "required": false,
+      "secret": false,
+      "default": "rounded"
+    },
+    {
+      "id": "cardWidth",
+      "type": "integer",
+      "grammar": "integer",
+      "required": false,
+      "secret": false,
+      "default": 56
+    }
+  ],
+  "dependencies": [],
+  "suites": [
+    {
+      "id": "web",
+      "argv": [
+        "node",
+        "--test",
+        "tests/web.test.ts"
+      ],
+      "scope": "required-local",
+      "tools": {
+        "node": "26.5.0"
+      }
+    },
+    {
+      "id": "apple",
+      "argv": [
+        "python3",
+        "tests/native.py",
+        "apple"
+      ],
+      "scope": "platform",
+      "fixtures": [
+        "tests/apple/main.swift"
+      ],
+      "tools": {
+        "python3": "3.12.8",
+        "swiftc": "6.4.2"
+      }
+    },
+    {
+      "id": "android",
+      "argv": [
+        "python3",
+        "tests/native.py",
+        "android"
+      ],
+      "scope": "platform",
+      "fixtures": [
+        "tests/android/Main.kt"
+      ],
+      "tools": {
+        "python3": "3.12.8",
+        "kotlinc": "2.2.0",
+        "java": "26.0.1"
+      }
+    }
+  ],
+  "tools": {
+    "node": "26.5.0",
+    "python3": "3.12.8",
+    "swiftc": "6.4.2",
+    "kotlinc": "2.2.0",
+    "java": "26.0.1"
+  },
+  "platforms": [
+    "web",
+    "apple",
+    "android"
+  ],
+  "text": {
+    "purpose": "`card-graphics` draws a 52 card pack: a face with the rank over a small suit mark in two corners and either pips laid out as on a printed card (2 to 10), a large suit mark (ace) or, when the application supplies pictures, a court picture (jack, queen, king); a back (stripes, plain, or a picture); an empty slot; a card that arrives from the deck on a schedule; and a card that turns over. The rank is printed in the player's language through a function the application passes in (J is V in French). Sizes follow the card's width, 1.4 times taller than wide. The layout of pips, the schedule of a deal and the shape of a flip are pure data (`card-model`), the same on every platform.",
+    "userInputs": "`backStyle` is `stripes` (default), `plain` or `art`; `art` uses back pictures the application supplies and falls back to stripes where there are none. `cornerStyle` is `rounded` (default), `soft` or `square`. `cardWidth` is the default width in pixels (8 to 600), used when a call gives no width. Card colours come from the theme: `paper` (face), `paperAccent` (red suits and the back), `onPrimary` (black suits).",
+    "integration": "Web: link `web/cards.css` after the theme's CSS; call `cardEl(code, { settings, width, theme, artFor, rankLabel })` for a face or, with `null`, a back; `cardSlot` for an empty place; `dealPlan` or `dealRounds` to schedule a deal and `dealInto` to animate one card from the deck's offset; `flippingCard(from, to)` for a turn. Pass `artFor` to say where artwork files are (`card-back-<theme>.png`, `card-<theme>-jack|queen|king.png`) or omit it to draw everything in code. Apple: compile `CardModel.swift` anywhere and `PlayingCard.swift` in UIKit targets with the theme's Swift files; set `.cardStyle(CardStyle(...))` once; use `PlayingCard`, `CardSlot`, `DealtCard`, `FlippingCard`. Android: add `CardModel.kt` and `PlayingCard.kt` to a Compose module with the theme's Kotlin files; provide `LocalCardStyle`. Which cards exist, who holds them, the logo, hand underlines, the possible-hands panel and showdown layouts stay in the recipe.",
+    "infrastructure": "None. Local drawing only; no accounts, network or deployment.",
+    "verification": "Node tests check that all 52 codes parse and nothing else does, pip counts equal the rank and the lower half is upside down, face models for red and black suits, ranks in another language, aces, court pictures and backs with and without artwork, settings validation, sizes, the deal schedule (three cards a second), dealing round the table, the flip curve, and the DOM produced by `cardEl`, `cardSlot`, `dealInto` and `flippingCard` (including the face swap at the half turn) against a stand-in page. The Apple check compiles and runs `tests/apple/main.swift` for macOS, comparing all 52 faces, backs, metrics, deal and flip with the TypeScript output, then type-checks all Swift with the theme's against the iOS simulator SDK. The Android check compares the same 52 faces (`tests/android/Expected.kt`); kotlinc was not available where this was written, so it has not been run, and `PlayingCard.kt` (Compose) is only compiled by the application's Gradle build. Pixels are not compared.",
+    "scenarios": "A table draws five community cards, some as empty slots; a deal sends two cards to each seat one after another from the deck's position; a showdown turns a seat's cards over; a French player sees V, D, R for jack, queen, king; a recipe with its own artwork passes `artFor` and gets pictured backs and courts, while one without gets the code-drawn cards.",
+    "updates": "Patch updates replace files only. The component keeps no data; removal deletes its files and the application's imports of them."
+  },
+  "agentInstructions": "Select `ourapps-ae/card-graphics`; connect `theme` to the theme component. Set `backStyle`, `cornerStyle` and `cardWidth` from the recipe's look answer only if the user asked for something other than the defaults. Rank labels come from the `translations` component (keys the recipe defines); do not add strings here.",
+  "developerInstructions": "Supply card pictures (optional) named `card-back-<theme>.png` and `card-<theme>-jack|queen|king.png` and an `artFor` that finds them. Supply `rankLabel` if the application is translated. Keep `card-model` the single source of truth: change pip layouts there, regenerate fixtures with `node tests/make-fixtures.ts`, and update the Swift and Kotlin models to match.",
+  "suitability": {
+    "format": 1,
+    "jobs": [
+      "card-graphics"
+    ],
+    "profiles": [
+      {
+        "id": "any",
+        "load": {},
+        "cost": "none",
+        "regions": [
+          "any"
+        ],
+        "compliance": []
+      }
+    ],
+    "notes": "Pure library; no provider limits apply."
+  }
+}
