@@ -176,3 +176,20 @@ test("a consumer draws a hand with French ranks and empty slots", () => {
   assert.equal(nodes[0].byClass("rank")[0].text, "V");
   assert.equal(nodes[4].classes().includes("slot"), true);
 });
+
+test("the OpenRPC interface describes card codes, settings and the exported functions", async () => {
+  const doc = JSON.parse(readFileSync(new URL("../interfaces/card-graphics.json", import.meta.url), "utf8"));
+  assert.equal(doc.openrpc, "1.3.2");
+  assert.deepEqual([doc.info.title, doc.info.version], ["ae/card-graphics", "1.0.0"]);
+  const { CardCode, CardSettings, PipLayout, FaceModel } = doc.components.schemas;
+  const code = new RegExp(CardCode.pattern);
+  for (const c of allCards()) assert.match(c, code);
+  for (const bad of ["Xh", "A", "Ahh", "1c"]) assert.doesNotMatch(bad, code);
+  assert.deepEqual(CardSettings.required, Object.keys(normaliseSettings()));
+  assert.deepEqual(PipLayout.propertyNames.enum, Object.keys(PIPS));
+  const face = faceModel("Ah");
+  const back = faceModel(null);
+  assert.deepEqual(FaceModel.oneOf.map((s: { required: string[] }) => s.required.sort()), [Object.keys(back).sort(), Object.keys(face).sort()]);
+  const web: Record<string, unknown> = { ...(await import("../implementation/web/card-model.ts")), ...(await import("../implementation/web/cards.ts")) };
+  for (const method of doc.methods) assert.equal(typeof web[method.name], "function", method.name);
+});
