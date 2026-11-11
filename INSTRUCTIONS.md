@@ -3,7 +3,7 @@
 ## For the agent
 Select `ourapps-ae/card-graphics`; connect `theme` to the theme component. Set `backStyle`, `cornerStyle` and `cardWidth` from the recipe's look answer only if the user asked for something other than the defaults. Rank labels come from the `translations` component (keys the recipe defines); do not add strings here.
 
-- Select package `ourapps-ae/card-graphics` version `0.4.0`.
+- Select package `ourapps-ae/card-graphics` version `0.4.1`.
 - Settings to configure:
   - `backStyle` (string, identifier; optional; default `stripes`)
   - `cornerStyle` (string, identifier; optional; default `rounded`)
