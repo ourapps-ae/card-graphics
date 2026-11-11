@@ -24,7 +24,7 @@ Facilities: `card-graphics` (Card faces, backs, slots, dealing and flipping).
 - `implementation/web/cards.ts` -> `components/card-graphics/web/cards.ts`
 
 Dependencies: none.
-`tools.lock.json` pins verification tools: node 26.5.0, python3 3.12.8, swiftc 6.4.2, kotlinc 2.2.0, java 26.0.1. Licence wording remains deferred.
+`tools.lock.json` pins verification tools: node 26.5, python3 3.12, swiftc 6.4, kotlinc 2.2, java 26.0. Licence wording remains deferred.
 
 ## Provided interfaces
 - `interfaces/card-graphics.json` defines `card-graphics` (ae/card-graphics) version 1.0.0 as an OpenRPC 1.3.2 document: one method per web function, each description naming the Swift and Kotlin form or saying it is web only, with card codes, settings, face models, deal steps and pip layout as JSON Schema 2020-12 under `components.schemas`. Picture lookups, rank labels and DOM elements are described as host values, not serialised.
@@ -44,9 +44,9 @@ None. Local drawing only; no accounts, network or deployment.
 ## Verification
 Node tests check that all 52 codes parse and nothing else does, pip counts equal the rank and the lower half is upside down, face models for red and black suits, ranks in another language, aces, court pictures and backs with and without artwork, settings validation, sizes, the deal schedule (three cards a second), dealing round the table, the flip curve, and the DOM produced by `cardEl`, `cardSlot`, `dealInto` and `flippingCard` (including the face swap at the half turn) against a stand-in page, and that the OpenRPC interface's card code pattern, settings, pip ranks and face model shapes match the code and every method it lists is an exported web function. The Apple check compiles and runs `tests/apple/main.swift` for macOS, comparing all 52 faces, backs, metrics, deal and flip with the TypeScript output, then type-checks all Swift with the theme's against the iOS simulator SDK. The Android check compares the same 52 faces (`tests/android/Expected.kt`); kotlinc was not available where this was written, so it has not been run, and `PlayingCard.kt` (Compose) is only compiled by the application's Gradle build. Pixels are not compared.
 
-- `node --test tests/web.test.ts` (web, required-local; tools: node 26.5.0)
-- `python3 tests/native.py apple` (apple, platform; tools: python3 3.12.8, swiftc 6.4.2)
-- `python3 tests/native.py android` (android, platform; tools: python3 3.12.8, kotlinc 2.2.0, java 26.0.1)
+- `node --test tests/web.test.ts` (web, required-local; tools: node 26.5)
+- `python3 tests/native.py apple` (apple, platform; tools: python3 3.12, swiftc 6.4)
+- `python3 tests/native.py android` (android, platform; tools: python3 3.12, kotlinc 2.2, java 26.0)
 
 ## Scenarios and presentation
 A table draws five community cards, some as empty slots; a deal sends two cards to each seat one after another from the deck's position; a showdown turns a seat's cards over; a French player sees V, D, R for jack, queen, king; a recipe with its own artwork passes `artFor` and gets pictured backs and courts, while one without gets the code-drawn cards.
