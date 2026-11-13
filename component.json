@@ -41,6 +41,12 @@
       "executable": false,
       "source": "implementation/web/cards.ts",
       "template": false
+    },
+    {
+      "destination": "components/card-graphics/web/index.ts",
+      "executable": false,
+      "source": "implementation/web/index.ts",
+      "template": false
     }
   ],
   "capabilities": {
@@ -53,7 +59,8 @@
       "components/card-graphics/apple/Sources/PlayingCard.swift",
       "components/card-graphics/web/card-model.ts",
       "components/card-graphics/web/cards.css",
-      "components/card-graphics/web/cards.ts"
+      "components/card-graphics/web/cards.ts",
+      "components/card-graphics/web/index.ts"
     ]
   },
   "collect": [
@@ -153,6 +160,10 @@
     {
       "executable": false,
       "path": "implementation/web/cards.ts"
+    },
+    {
+      "executable": false,
+      "path": "implementation/web/index.ts"
     },
     {
       "executable": false,
