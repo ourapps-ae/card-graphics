@@ -1,6 +1,6 @@
 {
   "name": "card-graphics",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "title": "Card graphics",
   "description": "Playing card faces, backs and empty slots with deal and flip animation, for web, Apple and Android.",
   "facilities": [
